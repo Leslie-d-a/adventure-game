@@ -1,11 +1,13 @@
 var currentLevel = 0;
 const TITLE = document.getElementById("levelTitle");
 const DESCRIPTION = document.getElementById("levelDescription");
+const GAMEDIV = document.getElementById("gameContainer");
 const BUTTONSDIV = document.getElementById("buttons");
 
 function levelRefresh(){
     TITLE.innerHTML = levels[currentLevel].title;
     DESCRIPTION.innerHTML = levels[currentLevel].description;
+    GAMEDIV.style.backgroundImage = "url('pictures/main-menu.jpg')";
     while(BUTTONSDIV.lastChild){
         BUTTONSDIV.lastChild.remove();
     }

@@ -2,6 +2,7 @@ var levels = [
     {
         "title":"Main Menu",
         "description":"Begin van het spel",
+        "background":'pictures/main-menu.jpg',
         "buttons":1,
         "buttonInfo":[
             {
