@@ -24,5 +24,27 @@ var levels = [
                 "toLevel":0
             }
         ]
+    },
+    {
+        "title":"Level 2",
+        "description":"Level 2 van game",
+        "buttons":3,
+        "buttonInfo":[
+            {
+                "text":"to second level",
+                "toLevel":1
+            },
+            {
+                "text":"death 2",
+                "toLevel":0
+            },
+            {
+                "text":"pick up item",
+                "toLevel":2,
+                "function":function(){
+                    grabItem("item1");
+                }
+            }
+        ]
     }
 ]

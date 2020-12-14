@@ -17,6 +17,7 @@ function levelRefresh(){
             currentLevel = levels[currentLevel].buttonInfo[e.target.getAttribute('number')].toLevel;
             levelRefresh();
         })
+        button.onclick = levels[currentLevel].buttonInfo[i].function;
         BUTTONSDIV.appendChild(button);
     }
 }
