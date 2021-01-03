@@ -4,7 +4,54 @@
 }
 body{
     color: white;
+    background-color:black;
+    text-align: center;
+    margin: 5vh 5vw;
 }
-.gameContainer{
-    height: 50vh;
+#gameContainer{
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 0 auto;
+    height: 90vh;
+    width: 90vw;
+}
+#gameContainer h1{
+    font-size: 60px;
+    line-height: 80px;
+    background-color: rgba(50,50,50,0.5);
+    margin: 0 auto;
+}
+#gameContainer p{
+    font-size: 30px;
+    position: relative;
+    margin: 0 auto;
+    width: 50%;
+    top: 20%;
+    background-color: rgba(50,50,50,0.5);
+}
+#inventory{
+    display:none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20%;
+}
+#inventory img{
+    width: 40px;
+}
+#inventory span{
+    width: 40px;
+}
+#buttons{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom:0;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#buttons button{
+    width: 100%;
+    padding: 20px;
 }
